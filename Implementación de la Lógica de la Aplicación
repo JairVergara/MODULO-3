@@ -1,0 +1,25 @@
+def agregar_receta():
+    nombre = input("Nombre de la receta: ")
+    ingredientes = []
+    pasos = []
+
+    while True:
+        ingrediente = input("Agregar ingrediente (dejar en blanco para terminar): ")
+        if not ingrediente:
+            break
+        ingredientes.append(ingrediente)
+
+    while True:
+        paso = input("Agregar paso (dejar en blanco para terminar): ")
+        if not paso:
+            break
+        pasos.append(paso)
+
+    receta = {
+        "nombre": nombre,
+        "ingredientes": ingredientes,
+        "pasos": pasos
+    }
+
+    recetas_collection.insert_one(receta)
+    print("Receta agregada con éxito!")
