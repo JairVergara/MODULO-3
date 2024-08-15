@@ -1,0 +1,5 @@
+{
+    "nombre": "Receta Ejemplo",
+    "ingredientes": ["ingrediente1", "ingrediente2", "ingrediente3"],
+    "pasos": ["paso1", "paso2", "paso3"]
+}
